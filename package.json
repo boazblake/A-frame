@@ -1,43 +1,26 @@
 {
-	"name": "Matty-App",
-	"version": "1.0.0",
-	"main": "index.js",
-	"license": "MIT",
-	"devDependencies": {
-		"@babel/core": "^7.2.2",
-		"babel-cli": "^6.26.0",
-		"babel-core": "^6.26.0",
-		"babel-loader": "^8.0.4",
-		"babel-plugin-transform-react-jsx": "^6.24.1",
-		"babel-preset-es2015": "^6.24.1",
-		"babel-preset-stage-1": "^6.24.1",
-		"clean-webpack-plugin": "^1.0.0",
-		"css-loader": "^2.0.1",
-		"file-loader": "^2.0.0",
-		"html-webpack-plugin": "^3.0.4",
-		"node-sass": "^4.11.0",
-		"sass-loader": "^7.1.0",
-		"style-loader": "^0.23.1",
-		"webpack": "^4.0.1",
-		"webpack-cli": "^3.1.2",
-		"webpack-dev-server": "^3.1.14"
-	},
-	"dependencies": {
-		"@loadingio/loading-bar": "^0.1.1",
-		"animejs": "^2.2.0",
-		"bulma": "^0.7.2",
-		"data.task": "^3.1.2",
-		"font-awesome": "^4.7.0",
-		"mithril": "^2.0.0-rc.1",
-		"mithril-stream": "^1.1.0",
-		"moment": "^2.22.2",
-		"ramda": "^0.26.0"
-	},
-	"scripts": {
-		"start": "yarn web",
-		"web": "webpack-dev-server --open",
-		"build": "webpack --config webpack.config.js"
-	},
-	"description": "Matty App",
-	"author": ""
+  "name": "aframe",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel ./index.html --out-dir ./docs",
+    "build": "parcel build ./index.html --public-url ./ --out-dir ./docs"
+  },
+  "dependencies": {
+    "folktale": "^2.3.2",
+    "mithril": "^1.1.6",
+    "mithril-stream": "^2.0.0",
+    "moment": "^2.24.0",
+    "pubnub": "^4.24.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "parcel": "^1.12.3",
+    "sass": "^1.20.3"
+  },
+  "description": "3d App",
+  "keywords": [],
+  "author": ""
 }
